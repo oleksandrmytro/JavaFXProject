@@ -282,7 +282,8 @@ public class GeometricShapes extends Application {
     }
 
     private Shape drawPolygon(double x, double y, double value, Color value0) {
-        Polygon polygon = new Polygon(x - value / 2, y, x - value / 4, y - value / 2, x + value / 4, y - value / 2, x + value / 2, y, x + value / 4, y + value / 2, x - value / 4, y + value / 2);
+        Polygon polygon = new Polygon(x - value / 2, y, x - value / 4, y - value / 2, x + value / 
+                4, y - value / 2, x + value / 2, y, x + value / 4, y + value / 2, x - value / 4, y + value / 2);
         polygon.setFill(value0);
         setStrokeFill(polygon);
         return polygon;

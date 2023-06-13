@@ -180,7 +180,7 @@ public class Pictures extends Application {
             } catch (FileNotFoundException ex) {
                 Alert alert = new Alert(AlertType.ERROR);
                 alert.setTitle("Error");
-                alert.setContentText("An error occurred while loading the file \n Plese select the correct file");
+                alert.setContentText("An error occurred while loading the file \nPlease select the correct file");
             }
         }
     }
