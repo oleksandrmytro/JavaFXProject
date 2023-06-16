@@ -166,8 +166,8 @@ public class Pictures extends Application {
     private void loadPicture() {
         FileChooser fc = new FileChooser();
         fc.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("PNG", "*.png"),
-                new FileChooser.ExtensionFilter("JPG", "*.jpg")
+                new FileChooser.ExtensionFilter("JPG", "*.jpg"),
+                new FileChooser.ExtensionFilter("PNG", "*.png")
         );
 
         file = fc.showOpenDialog(stage);
@@ -372,10 +372,7 @@ public class Pictures extends Application {
             }
 
             // Add the series to the chart
-            lineChart.getData().add(redSeries);
-            lineChart.getData().add(greenSeries);
-            lineChart.getData().add(blueSeries);
-
+            lineChart.getData().addAll(redSeries, greenSeries, blueSeries);
         }
     }
 
